@@ -9,12 +9,13 @@ def get_long_desc():
     except:
         print("WARNING: The long readme wasn't converted properly")
 
-long_desc = get_long_desc()
+readme = open('README.rst', 'r')
+long_desc = readme.read()
 
 setup(name='mezzanine-organization-themes',
     version=__version__,
     description='Themes for the Mezzo CMS',
-    long_description=long_desc.decode("ascii"),
+    long_description=long_desc,
     author='Guillaume Pellerin',
     author_email='guillaume.pellerin@ircam.fr',
     url='https://github.com/Ircam-Web/mezzanine-organization-themes',
