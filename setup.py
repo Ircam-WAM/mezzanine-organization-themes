@@ -22,9 +22,6 @@ setup(name='mezzanine-organization-themes',
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
-    install_requires=[
-        'mezzanine-organization',
-    ],
     classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
