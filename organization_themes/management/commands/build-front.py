@@ -19,18 +19,25 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-import os, sys
+import os, time
+import subprocess
+from django.apps import apps
 from optparse import make_option
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
-from django.contrib.auth.models import User
-from mezzanine.utils.sites import host_theme_path
+from django.db import connections
 
 class Command(BaseCommand):
-    help = """Builds the theme defined in HOST_THEMES setting
-            against the current site"""
+    help = "Build the front with bower and gulp"
 
     def handle(self, *args, **options):
-        theme_path = host_theme_path()
-        os.chdir(theme_path)
-        os.system('bower --allow-root install; gulp build')
+        for ht in settings.HOST_THEMES:
+            # search for theme name in INSTALLED_APPS
+            # to get the ones that are used
+            if ht[1] in settings.INSTALLED_APPS:
+                theme = ht[1]
+                if theme :
+                    theme_path = apps.get_app_config(theme.split('.')[-1]).path
+                    os.chdir(theme_path)
+                    subprocess.run(["bower", "--allow-root", "install"])
+                    subprocess.run(["gulp", "build"])
