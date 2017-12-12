@@ -1,6 +1,10 @@
 [submodule "organization_themes/ircam-www-theme"]
 	path = organization_themes/ircam-www-theme
 	url = git@github.com:Ircam-Web/ircam-www-theme.git
+	branch-master = master
+    branch-dev = dev
 [submodule "organization_themes/vertigo-themes"]
 	path = organization_themes/vertigo-themes
 	url = git@github.com:Ircam-Web/vertigo-themes.git
+	branch-master = master
+    branch-dev = dev
