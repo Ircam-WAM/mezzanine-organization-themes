@@ -16,3 +16,9 @@
 	branch-master = master
     branch-dev = dev
 	ignore = dirty
+[submodule "organization_themes/manifeste-theme"]
+	path = organization_themes/manifeste-theme
+    url = https://github.com/Ircam-Web/manifeste-theme.git
+    branch-master = master
+    branch-dev = dev
+    ignore = dirty
