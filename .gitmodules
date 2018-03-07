@@ -20,5 +20,5 @@
 	path = organization_themes/manifeste-theme
     url = git@github.com:Ircam-Web/manifeste-theme.git
     branch-master = master
-    branch-dev = dev
+    branch-dev = master
     ignore = dirty
