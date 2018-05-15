@@ -7,8 +7,8 @@
 [submodule "organization_themes/vertigo-themes"]
 	path = organization_themes/vertigo-themes
 	url = https://github.com/Ircam-Web/vertigo-themes.git
-	branch-master = master
-    branch-dev = dev
+	branch-master = vertigo-master
+    branch-dev = vertigo-dev
 	ignore = dirty
 [submodule "organization_themes/ircam-forum-theme"]
     path = organization_themes/ircam-forum-theme
