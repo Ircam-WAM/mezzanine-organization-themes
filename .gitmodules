@@ -3,16 +3,16 @@
 	url = https://github.com/Ircam-Web/ircam-www-theme.git
 	branch-master = master
     branch-dev = dev
-	ignore = dirty
+    ignore = dirty
 [submodule "organization_themes/vertigo-themes"]
     path = organization_themes/vertigo-themes
-    url = git@github.com:Ircam-Web/vertigo-themes.git
+    url = https://github.com/Ircam-Web/vertigo-themes.git
     branch-master = vertigo-master
     branch-dev = vertigo-dev
     ignore = dirty
 [submodule "organization_themes/manifeste-theme"]
     path = organization_themes/manifeste-theme
-    url = git@github.com:Ircam-Web/manifeste-theme.git
+    url = https://github.com/Ircam-Web/manifeste-theme.git
     branch-master = master
     branch-dev = dev
     ignore = dirty
