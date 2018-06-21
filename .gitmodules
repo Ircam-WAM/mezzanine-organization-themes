@@ -10,12 +10,6 @@
     branch-master = vertigo-master
     branch-dev = vertigo-dev
     ignore = dirty
-[submodule "organization_themes/ircam-forum-theme"]
-    path = organization_themes/ircam-forum-theme
-    url = git@forge-2.ircam.fr:voyazopoulos/ircam-forum-theme.git
-    branch-master = master
-    branch-dev = dev
-    ignore = dirty
 [submodule "organization_themes/manifeste-theme"]
     path = organization_themes/manifeste-theme
     url = git@github.com:Ircam-Web/manifeste-theme.git
