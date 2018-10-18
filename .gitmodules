@@ -16,3 +16,9 @@
     branch-master = master
     branch-dev = dev
     ignore = dirty
+[submodule "organization_themes/ircam-forum-theme"]
+    path = organization_themes/ircam-forum-theme
+    url = https://forge-2.ircam.fr/voyazopoulos/django-ircam-forum.git
+    branch-master = master
+    branch-dev = dev
+    ignore = dirty
