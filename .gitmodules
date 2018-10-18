@@ -12,4 +12,4 @@
 	ignore = dirty
 [submodule "organization_themes/ircam-forum-theme"]
 	path = organization_themes/ircam-forum-theme
-	url = git@forge-2.ircam.fr:voyazopoulos/ircam-forum-theme.git
+	url = https://forge-2.ircam.fr/voyazopoulos/ircam-forum-theme.git
